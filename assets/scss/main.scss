@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$primary-color: #5E3AEE;
+$secondary-color: #F9F9FC;
+$text-color: #0F1221;
+$menu-color: #6B7092;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container {
+    .navbar {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $menu-color !important;
+                }
+
+                &.active {
+                    a {
+                        color: $primary-color !important;
+                        font-weight: bold !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container.box {
+    background-color: $secondary-color !important;
+    height: 80vh !important;
+    border-radius: 16px !important;
+    .introduce-text {
+        padding-left: 4em;
+    }
+    .title {
+        color: $text-color;
+        font-size: 3rem;
+        font-weight: bold;
+        word-spacing: 10px;
+        line-height: 1;
+    }
+    .profession {
+        color: $primary-color;
+    }
+    p {
+        color: $menu-color;
+    }
+    .btn.btn-primary {
+        background-color: $primary-color !important;
+        border: 1px solid $primary-color !important;
+        padding: .5em 2em !important;
+        transform: .5s all ease !important;
+
+        &:hover {
+            background-color: $secondary-color !important;
+            border: 1px solid $primary-color !important;
+            color: $primary-color !important;
+        }
+    }
+    .btn.btn-secondary {
+        background-color: $text-color !important;
+        border: 1px solid $text-color !important;
+        padding: .5em 2em !important;
+
+        &:hover {
+            background-color: $secondary-color !important;
+            border: 1px solid $text-color !important;
+            color: $text-color !important;
+        }
+    }
+    img {
+        width: 21em !important;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        padding: 60px;
+        display: flex;
+        align-items: center;
+
+        .introduce-text {
+            padding-left: 15px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+        }
+    }
+}

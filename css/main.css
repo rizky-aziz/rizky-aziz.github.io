@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container .navbar .navbar-nav .nav-item .nav-link {
+  color: #6B7092 !important;
+}
+
+.container .navbar .navbar-nav .nav-item.active a {
+  color: #5E3AEE !important;
+  font-weight: bold !important;
+}
+
+.container.box {
+  background-color: #F9F9FC !important;
+  height: 80vh !important;
+  border-radius: 16px !important;
+}
+
+.container.box .introduce-text {
+  padding-left: 4em;
+}
+
+.container.box .title {
+  color: #0F1221;
+  font-size: 3rem;
+  font-weight: bold;
+  word-spacing: 10px;
+  line-height: 1;
+}
+
+.container.box .profession {
+  color: #5E3AEE;
+}
+
+.container.box p {
+  color: #6B7092;
+}
+
+.container.box .btn.btn-primary {
+  background-color: #5E3AEE !important;
+  border: 1px solid #5E3AEE !important;
+  padding: .5em 2em !important;
+  transform: .5s all ease !important;
+}
+
+.container.box .btn.btn-primary:hover {
+  background-color: #F9F9FC !important;
+  border: 1px solid #5E3AEE !important;
+  color: #5E3AEE !important;
+}
+
+.container.box .btn.btn-secondary {
+  background-color: #0F1221 !important;
+  border: 1px solid #0F1221 !important;
+  padding: .5em 2em !important;
+}
+
+.container.box .btn.btn-secondary:hover {
+  background-color: #F9F9FC !important;
+  border: 1px solid #0F1221 !important;
+  color: #0F1221 !important;
+}
+
+.container.box img {
+  width: 21em !important;
+}
+
+@media screen and (max-width: 992px) {
+  .container.box img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container.box {
+    text-align: center;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .container.box .introduce-text {
+    padding-left: 15px;
+  }
+  .container.box .title {
+    font-size: 2.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

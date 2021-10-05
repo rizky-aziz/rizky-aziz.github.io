@@ -79,7 +79,7 @@ body {
             width: 10em !important;
         }
         @media screen and (max-width: 576px) {
-            margin-top: 5em !important;
+            margin-top: 1em !important;
         }
     }
 
@@ -107,7 +107,7 @@ body {
         }
     }
 
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 320px) {
         .introduce-text {
             padding-left: 0 !important;
         }

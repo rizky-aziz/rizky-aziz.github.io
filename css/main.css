@@ -75,7 +75,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .container.box img {
-    margin-top: 5em !important;
+    margin-top: 1em !important;
   }
 }
 
@@ -103,7 +103,7 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .container.box .introduce-text {
     padding-left: 0 !important;
   }

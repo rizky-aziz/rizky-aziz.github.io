@@ -97,14 +97,13 @@ body {
 @media screen and (max-width: 576px) {
   .container.box .title {
     font-size: 2rem !important;
-    white-space: nowrap;
   }
   .container.box .introduce-text {
     padding-left: 0 !important;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .container.box .introduce-text {
     padding-left: 0 !important;
   }

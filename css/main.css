@@ -43,6 +43,7 @@ body {
   border: 1px solid #5E3AEE !important;
   padding: .5em 2em !important;
   transform: .5s all ease !important;
+  margin-top: 5em;
 }
 
 .container.box .btn.btn-primary:hover {
@@ -55,6 +56,8 @@ body {
   background-color: #0F1221 !important;
   border: 1px solid #0F1221 !important;
   padding: .5em 2em !important;
+  margin-top: 5em;
+  margin-left: 1em;
 }
 
 .container.box .btn.btn-secondary:hover {
@@ -75,7 +78,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .container.box img {
-    margin-top: 10em !important;
+    margin-top: 18em !important;
   }
 }
 
@@ -95,11 +98,25 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  .container.box .title {
-    font-size: 2rem !important;
-  }
   .container.box .introduce-text {
     padding-left: 0 !important;
+  }
+  .container.box .title {
+    font-size: 1.5rem !important;
+    white-space: nowrap;
+  }
+  .container.box .profession {
+    font-size: 1.3rem !important;
+  }
+  .container.box p {
+    font-size: .8rem !important;
+  }
+  .container.box .btn.btn-primary {
+    margin-top: 10px;
+  }
+  .container.box .btn.btn-secondary {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 

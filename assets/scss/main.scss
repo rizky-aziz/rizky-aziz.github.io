@@ -54,6 +54,7 @@ body {
         border: 1px solid $primary-color !important;
         padding: .5em 2em !important;
         transform: .5s all ease !important;
+        margin-top: 5em;    
 
         &:hover {
             background-color: $secondary-color !important;
@@ -65,6 +66,8 @@ body {
         background-color: $text-color !important;
         border: 1px solid $text-color !important;
         padding: .5em 2em !important;
+        margin-top: 5em;
+        margin-left: 1em;
 
         &:hover {
             background-color: $secondary-color !important;
@@ -79,7 +82,7 @@ body {
             width: 10em !important;
         }
         @media screen and (max-width: 576px) {
-            margin-top: 10em !important;
+            margin-top: 18em !important;
         }
     }
 
@@ -99,11 +102,25 @@ body {
     }
 
     @media screen and (max-width: 576px) {
-        .title {
-            font-size: 2rem !important;
-        }
         .introduce-text {
             padding-left: 0 !important;
+        }
+        .title {
+            font-size: 1.5rem !important;
+            white-space: nowrap;
+        }
+        .profession {
+            font-size: 1.3rem !important;
+        }
+        p {
+            font-size: .8rem !important;
+        }
+        .btn.btn-primary {
+            margin-top: 10px;
+        }
+        .btn.btn-secondary {
+            margin-left: 0;
+            margin-top: 10px;
         }
     }
 

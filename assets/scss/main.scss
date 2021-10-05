@@ -6,7 +6,7 @@ $text-color: #0F1221;
 $menu-color: #6B7092;
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     
 }
 
@@ -76,7 +76,7 @@ body {
         width: 21em !important;
 
         @media screen and (max-width: 992px) {
-            display: none;
+            width: 10em !important;
         }
     }
 

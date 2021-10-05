@@ -67,9 +67,15 @@ body {
   width: 21em !important;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .container.box img {
     width: 10em !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container.box img {
+    margin-top: 15em !important;
   }
 }
 
@@ -85,6 +91,22 @@ body {
   }
   .container.box .title {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container.box .title {
+    font-size: 2rem !important;
+    white-space: nowrap;
+  }
+  .container.box .introduce-text {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container.box .introduce-text {
+    padding-left: 0 !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

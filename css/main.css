@@ -78,7 +78,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .container.box img {
-    margin-top: 18em !important;
+    margin-top: 3em !important;
   }
 }
 

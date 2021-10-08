@@ -98,8 +98,6 @@ body {
     padding: 60px;
     display: flex;
     align-items: center;
-    padding-left: 0;
-    padding-right: 0;
   }
   .container.box .introduce-text {
     padding-left: 0;
@@ -163,6 +161,15 @@ body {
 
 .container.works h4 {
   color: #0F1221;
+}
+
+@media screen and (max-width: 768px) {
+  .container.works h1 {
+    font-size: 2rem;
+  }
+  .container.works h4, .container.works p {
+    font-size: 1em;
+  }
 }
 
 .container.contact {

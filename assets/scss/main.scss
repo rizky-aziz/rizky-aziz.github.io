@@ -100,8 +100,6 @@ body {
         padding: 60px;
         display: flex;
         align-items: center;
-        padding-left: 0;
-        padding-right: 0;
 
         .introduce-text {
             padding-left: 0;
@@ -149,7 +147,6 @@ body {
     padding-bottom: 5em;
     background-color: $text-color;
     color: white;
-    // padding: 3em;
 
     h6 {
         color: $primary-color;
@@ -169,6 +166,15 @@ body {
     }
     h4 {
         color: $text-color;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+        h4, p {
+            font-size: 1em;
+        }
     }
 }
 

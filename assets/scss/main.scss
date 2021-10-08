@@ -91,7 +91,7 @@ body {
             width: 10em !important;
         }
         @media screen and (max-width: 576px) {
-            margin-top: 3em !important;
+            margin-top: -7em !important;
         }
     }
 
@@ -115,7 +115,8 @@ body {
             padding-left: 0 !important;
         }
         .title {
-            font-size: 1.5rem !important;
+            font-size: 2rem !important;
+            margin-top: 10px;
             white-space: nowrap;
         }
         .profession {

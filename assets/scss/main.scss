@@ -5,9 +5,12 @@ $secondary-color: #F9F9FC;
 $text-color: #0F1221;
 $menu-color: #6B7092;
 
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
 body {
     font-family: 'Roboto', sans-serif !important;
-    
 }
 
 .container {
@@ -29,10 +32,12 @@ body {
     }
 }
 
+.btn {
+    border-radius: 0 !important;
+}
+
 .container.box {
     background-color: $secondary-color !important;
-    height: 80vh !important;
-    border-radius: 16px !important;
     .introduce-text {
         padding-left: 4em;
     }
@@ -54,7 +59,7 @@ body {
         border: 1px solid $primary-color !important;
         padding: .5em 2em !important;
         transform: .5s all ease !important;
-        margin-top: 5em;    
+        margin-top: 5em;
 
         &:hover {
             background-color: $secondary-color !important;
@@ -127,6 +132,55 @@ body {
     @media screen and (max-width: 320px) {
         .introduce-text {
             padding-left: 0 !important;
+        }
+    }
+}
+
+.container-fluid.about-me {
+    margin: 8em auto 8em auto !important;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: $text-color;
+    color: white;
+    // padding: 3em;
+
+    h6 {
+        color: $primary-color;
+        opacity: 1;
+    }
+
+    p {
+        opacity: .5 ;
+        line-height: 1.7;
+    }
+
+}
+
+.container.works {
+    h1 {
+        font-weight: 700;
+    }
+    h4 {
+        color: $text-color;
+    }
+}
+
+.container.contact {
+    background-color: $text-color;
+    color: white;
+    margin-bottom: 5em;
+    
+    .container {
+        padding-top: 5em;
+        padding-bottom: 5em;
+
+        h6 {
+            opacity: .4;
+            font-weight: 400;
+        }
+
+        p {
+            opacity: .4;
         }
     }
 }

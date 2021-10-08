@@ -100,9 +100,11 @@ body {
         padding: 60px;
         display: flex;
         align-items: center;
+        padding-left: 0;
+        padding-right: 0;
 
         .introduce-text {
-            padding-left: 15px;
+            padding-left: 0;
         }
 
         .title {

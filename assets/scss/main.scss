@@ -42,8 +42,8 @@ body {
 
 .container.box {
     background-color: $secondary-color !important;
-    // padding-left: 5em;
-    // padding-right: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
     .title {
         color: $text-color;
         font-size: 3rem;
@@ -101,16 +101,16 @@ body {
         text-align: center;
         display: flex;
         align-items: center;
-        padding-left: auto !important;
-        padding-right: auto !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
         .title {
             font-size: 2.5rem;
         }
     }
 
     @media screen and (max-width: 576px) {
-        padding-left: auto !important;
-        padding-right: auto !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
         .title {
             font-size: 1.5rem !important;
             margin-top: 10px;
@@ -129,6 +129,11 @@ body {
             margin-left: 0;
             margin-top: 10px;
         }
+    }
+
+    @media screen and (max-width: 360px) {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
 
@@ -157,6 +162,7 @@ body {
     }
     h4 {
         color: $text-color;
+        font-size: 1.2rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -187,6 +193,10 @@ body {
 
         p {
             opacity: .4;
+        }
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }

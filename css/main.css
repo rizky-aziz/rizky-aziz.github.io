@@ -26,6 +26,8 @@ body {
 
 .container.box {
   background-color: #F9F9FC !important;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 .container.box .title {
@@ -99,8 +101,8 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-    padding-left: auto !important;
-    padding-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .container.box .title {
     font-size: 2.5rem;
@@ -109,8 +111,8 @@ body {
 
 @media screen and (max-width: 576px) {
   .container.box {
-    padding-left: auto !important;
-    padding-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .container.box .title {
     font-size: 1.5rem !important;
@@ -129,6 +131,13 @@ body {
   .container.box .btn.btn-secondary {
     margin-left: 0;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container.box {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -156,6 +165,7 @@ body {
 
 .container.works h4 {
   color: #0F1221;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -187,5 +197,10 @@ body {
 
 .container.contact .container p {
   opacity: .4;
+}
+
+.container.contact .container a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

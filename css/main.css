@@ -11,6 +11,14 @@ body {
   font-family: 'Roboto', sans-serif !important;
 }
 
+.btn {
+  border-radius: 0 !important;
+}
+
+.container .navbar {
+  transition: .5s ease-in-out;
+}
+
 .container .navbar .navbar-nav .nav-item .nav-link {
   color: #6B7092 !important;
 }
@@ -20,8 +28,8 @@ body {
   font-weight: bold !important;
 }
 
-.btn {
-  border-radius: 0 !important;
+.container .navbar img:hover {
+  opacity: 0.7;
 }
 
 .container.box {
@@ -183,11 +191,13 @@ body {
 .container.contact {
   background-color: #0F1221;
   color: white;
+  margin: 5em auto 5em;
 }
 
 .container.contact .container {
   padding-top: 5em;
   padding-bottom: 5em;
+  transition: .5 all ease-in-out;
 }
 
 .container.contact .container h6 {
@@ -202,5 +212,15 @@ body {
 .container.contact .container a {
   text-decoration: none;
   color: white;
+}
+
+.container.contact .container img:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .container.contact {
+    margin-top: 5em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

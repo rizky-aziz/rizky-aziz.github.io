@@ -191,7 +191,7 @@ body {
 .container.contact {
   background-color: #0F1221;
   color: white;
-  margin: 5em auto 5em;
+  margin: 5em auto auto auto;
 }
 
 .container.contact .container {
@@ -218,9 +218,9 @@ body {
   opacity: 0.7;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
   .container.contact {
-    margin-top: 5em;
+    margin: 5em auto 5em;
   }
 }
 /*# sourceMappingURL=main.css.map */

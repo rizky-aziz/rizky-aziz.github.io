@@ -193,7 +193,7 @@ body {
 .container.contact {
     background-color: $text-color;
     color: white;
-    margin: 5em auto 5em;
+    margin: 5em auto auto auto;
 
     .container {
         padding-top: 5em;
@@ -218,7 +218,7 @@ body {
         }
     }
 
-    @media screen and (max-width: 768px) {
-        margin-top: 5em;
+    @media screen and (min-width: 992px) {
+        margin: 5em auto 5em;
     }
 }

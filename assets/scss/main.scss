@@ -91,8 +91,9 @@ body {
             color: $text-color !important;
         }
     }
+
     img {
-        width: 21em !important;
+        width: 21em;
 
         @media screen and (max-width: 768px) {
             width: 10em !important;
@@ -119,20 +120,25 @@ body {
     @media screen and (max-width: 576px) {
         padding-left: 15px !important;
         padding-right: 15px !important;
+
         .title {
             font-size: 1.5rem !important;
             margin-top: 10px;
             white-space: nowrap;
         }
+
         .profession {
             font-size: 1.3rem !important;
         }
+
         p {
             font-size: .8rem !important;
         }
+
         .btn.btn-primary {
             margin-top: 10px;
         }
+
         .btn.btn-secondary {
             margin-left: 0;
             margin-top: 10px;
@@ -173,6 +179,18 @@ body {
     h4 {
         color: $text-color;
         font-size: 1.2rem;
+    }
+
+    .img-hover-zoom {
+        overflow: hidden;
+        img {
+            transition: transform .5s ease;
+        }
+        &:hover {
+            img {
+                transform: scale(1.10);
+            }
+        }
     }
 
     @media screen and (max-width: 768px) {

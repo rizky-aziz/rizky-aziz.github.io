@@ -25,8 +25,6 @@ body {
 // Navbar
 .container-fluid#navbar-fixed {
     transition: top .5s;
-    position: sticky;
-    top: 0;
     .navbar {
         transition: .5s ease-in-out;
         .navbar-nav {
@@ -70,6 +68,11 @@ body {
         img:hover {
             opacity: 0.7;
         }
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: sticky;
+        top: 0;
     }
 }
 

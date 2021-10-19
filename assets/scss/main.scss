@@ -23,19 +23,43 @@ body {
 }
 
 // Navbar
-.container {
+.container-fluid {
+    transition: top .5s;
     .navbar {
         transition: .5s ease-in-out;
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    color: $menu-color !important;
+                    color: $menu-color;
+                    transition: .5s ease;
+
+                    &:hover {
+                        color: $primary-color;
+                        // &::after {
+                        //     content: '';
+                        //     display: block;
+                        //     width: 20px;
+                        //     height: 3px;
+                        //     background-color: $primary-color;
+                        //     bottom: 0;
+                        // }
+                    }
                 }
 
                 &.active {
                     a {
                         color: $primary-color !important;
                         font-weight: bold !important;
+                        position: relative;
+
+                        // &::after {
+                        //     content: '';
+                        //     display: block;
+                        //     width: 20px;
+                        //     height: 3px;
+                        //     background-color: $primary-color;
+                        //     bottom: 0;
+                        // }
                     }
                 }
             }
@@ -52,6 +76,7 @@ body {
     background-color: $secondary-color !important;
     padding-left: 5em;
     padding-right: 5em;
+    margin-top: 80px !important;
     .title {
         color: $text-color;
         font-size: 3rem;

@@ -16,42 +16,44 @@
 <body>
 
     <!-- Navbar Start -->
-    <div class="container px-lg-0">
+    <div class="container-fluid fixed-top" id="navbar-fixed">
         <!-- Just an image -->
-        <nav class="navbar navbar-expand-md navbar-light bg-transparent my-2 px-0">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/image/brand-logo.svg" width="35" height="35" alt="">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item mx-2 active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#works">Works</a>
-                </li>
-                <!-- <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Skills</a>
-                </li> -->
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <a class="navbar-brand" href="https://github.com/rizky-aziz" target="_blank">
-                <img src="./assets/icons/ic-github.svg" width="24" height="24" alt="github">
-            </a>
-            <a class="navbar-brand" href="https://www.linkedin.com/in/rizky-aziz-51b231192/" target="_blank">
-                <img src="./assets/icons/ic-linkedin.svg" width="24" height="24" alt="linkedin">
-            </a>
-            <a class="navbar-brand mr-0" href="https://www.instagram.com/rizkyazizhsn/" target="_blank">
-                <img src="./assets/icons/ic-instagram.svg" width="24" height="24" alt="instagram">
-            </a>
+        <nav class="navbar navbar-expand-md navbar-light my-2 px-0">
+            <div class="container px-lg-0">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/image/brand-logo.svg" width="35" height="35" alt="">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2 active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#works">Works</a>
+                    </li>
+                    <!-- <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li> -->
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="https://github.com/rizky-aziz" target="_blank">
+                    <img src="./assets/icons/ic-github.svg" width="24" height="24" alt="github">
+                </a>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/rizky-aziz-51b231192/" target="_blank">
+                    <img src="./assets/icons/ic-linkedin.svg" width="24" height="24" alt="linkedin">
+                </a>
+                <a class="navbar-brand mr-0" href="https://www.instagram.com/rizkyazizhsn/" target="_blank">
+                    <img src="./assets/icons/ic-instagram.svg" width="24" height="24" alt="instagram">
+                </a>
+                </div>
             </div>
         </nav>
     </div>
@@ -249,6 +251,25 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('navbar-fixed').style.top = '0';
+            } else {
+                document.getElementById('navbar-fixed').style.top = '-80px';
+            }
+
+            if (window.pageYOffset == 0) {
+                document.getElementById('navbar-fixed').classList.remove('bg-white')
+            } else {
+                document.getElementById('navbar-fixed').classList.add('bg-white')
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>

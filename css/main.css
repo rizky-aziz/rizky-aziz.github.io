@@ -171,9 +171,8 @@ body {
   font-weight: 700;
 }
 
-.container.works h4 {
+.container.works h6 {
   color: #0F1221;
-  font-size: 1.2rem;
 }
 
 .container.works .img-hover-zoom {
@@ -209,7 +208,7 @@ body {
 .container.contact .container {
   padding-top: 5em;
   padding-bottom: 5em;
-  transition: .5 all ease-in-out;
+  transition: .5s all ease-in-out;
 }
 
 .container.contact .container h6 {
@@ -224,6 +223,11 @@ body {
 .container.contact .container a {
   text-decoration: none;
   color: white;
+  transition: opacity .5s ease;
+}
+
+.container.contact .container a h5:hover {
+  opacity: .4;
 }
 
 .container.contact .container img:hover {

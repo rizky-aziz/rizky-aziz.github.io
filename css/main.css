@@ -44,7 +44,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container-fluid#navbar-fixed {
-    position: fixed;
+    position: sticky;
     top: 0;
   }
 }
@@ -163,12 +163,6 @@ body {
   .container.box {
     padding-left: 15px !important;
     padding-right: 15px !important;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container.box {
-    margin-top: 80px !important;
   }
 }
 

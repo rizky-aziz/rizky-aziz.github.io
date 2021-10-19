@@ -16,7 +16,7 @@
 <body>
 
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top" id="navbar-fixed">
+    <div class="container-fluid bg-white fixed-top" id="navbar-fixed" style="z-index: -1;">
         <!-- Just an image -->
         <nav class="navbar navbar-expand-md navbar-light my-2 px-0">
             <div class="container px-lg-0">
@@ -263,9 +263,9 @@
             }
 
             if (window.pageYOffset == 0) {
-                document.getElementById('navbar-fixed').classList.remove('bg-white')
+                document.getElementById('navbar-fixed').style.zIndex = '-1'
             } else {
-                document.getElementById('navbar-fixed').classList.add('bg-white')
+                document.getElementById('navbar-fixed').style.zIndex = '1030'
             }
             prevScrollpos = currentScrollPos;
         }

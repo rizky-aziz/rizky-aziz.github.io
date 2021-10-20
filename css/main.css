@@ -23,6 +23,10 @@ body {
   transition: .5s ease-in-out;
 }
 
+.container-fluid#navbar-fixed .navbar .navbar-toggler-icon {
+  color: #5E3AEE;
+}
+
 .container-fluid#navbar-fixed .navbar .navbar-nav .nav-item .nav-link {
   color: #6B7092;
   transition: .5s ease;
@@ -255,5 +259,22 @@ body {
   .container.contact {
     margin: 5em auto 5em;
   }
+}
+
+#btnTop {
+  bottom: 0;
+  right: 0;
+  border: none;
+  opacity: 0;
+  background-color: #5E3AEE;
+  transition: .3s ease;
+}
+
+#btnTop:hover {
+  transform: scale(1.1);
+}
+
+#btnTop:focus {
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */

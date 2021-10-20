@@ -27,6 +27,9 @@ body {
     transition: top .5s;
     .navbar {
         transition: .5s ease-in-out;
+        .navbar-toggler-icon {
+            color: $primary-color;
+        }
         .navbar-nav {
             .nav-item {
                 .nav-link {
@@ -270,5 +273,23 @@ body {
 
     @media screen and (min-width: 992px) {
         margin: 5em auto 5em;
+    }
+}
+
+// Scroll Button To Top
+#btnTop {
+    bottom: 0;
+    right: 0;
+    border: none;
+    opacity: 0;
+    background-color: $primary-color;
+    transition: .3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:focus {
+        outline: none;
     }
 }

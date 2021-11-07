@@ -91,7 +91,8 @@
     <div class="section container-fluid about-me mt-5" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                </div>
                 <div class="col-md-6" data-aos="fade" data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-once="true">
                     <h6 class="text-uppercase">Who Is Rizky Aziz</h6>
                     <h1>A Bit About Me</h1>
@@ -112,7 +113,7 @@
                     <div class="col-lg-6 mt-3 mt-sm-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="500" data-aos-once="true">
                         <a href="http://e-comsyst.birutekno.com" target="_blank" class="nav-link p-0">
                             <div class="img-hover-zoom">
-                                <img src="assets/image/ecomsys.png" class="img-fluid" alt="work 1">        
+                                <img src="assets/image/ecomsys.png" class="img-fluid" alt="work 1">
                             </div>
                             <div class="row justify-content-between align-items-center mt-3">
                                 <div class="col-md-6">
@@ -303,45 +304,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        
-        // Navbar On Scroll
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById('navbar-fixed').style.top = '0';
-            } else {
-                document.getElementById('navbar-fixed').style.top = '-80px';
-            }
-
-            if (window.pageYOffset == 0) {
-                document.getElementById('navbar-fixed').style.zIndex = '1'
-                document.getElementById('btnTop').style.opacity = '0';
-            } else {
-                document.getElementById('navbar-fixed').style.zIndex = '1030';
-                document.getElementById('btnTop').style.opacity = '1';
-            }
-            prevScrollpos = currentScrollPos;
-        }
-
-        
-        // Button Scroll To Top
-        function topBtn() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-        // Stop Preloader
-        var loader = document.querySelector('#preload')
-        window.addEventListener('load', function() {
-            loader.style.display = 'none';
-        })
-
-        AOS.init();
-
-    </script>
+    <!-- custom js -->
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>

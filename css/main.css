@@ -42,10 +42,6 @@ body {
   position: relative;
 }
 
-.container-fluid#navbar-fixed .navbar img:hover {
-  opacity: 0.7;
-}
-
 @media screen and (min-width: 1200px) {
   .container-fluid#navbar-fixed {
     position: sticky;
@@ -110,12 +106,14 @@ body {
 @media screen and (max-width: 768px) {
   .container.box img {
     width: 10em !important;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
   }
 }
 
 @media screen and (max-width: 576px) {
   .container.box img {
     margin-top: -4em !important;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from black to(rgba(0, 0, 0, 0)));
   }
 }
 
@@ -196,12 +194,16 @@ body {
   color: #0F1221;
 }
 
+.container.works .card {
+  border-radius: 0;
+}
+
 .container.works .img-hover-zoom {
   overflow: hidden;
 }
 
 .container.works .img-hover-zoom img {
-  transition: transform .5s ease;
+  transition: transform .7s ease;
 }
 
 .container.works .img-hover-zoom:hover img {

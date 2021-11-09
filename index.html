@@ -18,7 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="home">
     <!-- Preloader Start -->
     <div class="loader-bg" id="preload">
         <div class="loader-p">
@@ -27,39 +27,42 @@
     <!-- Preloader End -->
     <!-- Navbar Start -->
     <div class="section container-fluid bg-white" id="navbar-fixed">
-        <!-- Just an image -->
         <nav class="navbar navbar-expand-md navbar-light my-2 px-0">
             <div class="container px-lg-0">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/image/brand-logo.svg" width="35" height="35" alt="">
-                </a>
+                <div class="navigation-left">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/image/brand-logo.svg" width="35" height="35" alt="">
+                    </a>
+                </div>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#works">Works</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <a class="navbar-brand" href="https://github.com/rizky-aziz" target="_blank">
-                    <img src="./assets/icons/ic-github.svg" width="24" height="24" alt="github">
-                </a>
-                <a class="navbar-brand" href="https://www.linkedin.com/in/rizky-aziz-51b231192/" target="_blank">
-                    <img src="./assets/icons/ic-linkedin.svg" width="24" height="24" alt="linkedin">
-                </a>
-                <a class="navbar-brand mr-0" href="https://www.instagram.com/rizkyazizhsn/" target="_blank">
-                    <img src="./assets/icons/ic-instagram.svg" width="24" height="24" alt="instagram">
-                </a>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#works">Works</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-media-container d-none d-md-flex align-items-center justify-content-center">
+                    <a class="social-link" href="https://github.com/rizky-aziz" target="_blank">
+                        <img src="./assets/icons/ic-github.svg" width="24" height="24" alt="github">
+                    </a>
+                    <a class="social-link" href="https://www.linkedin.com/in/rizky-aziz-51b231192/" target="_blank">
+                        <img src="./assets/icons/ic-linkedin.svg" width="24" height="24" alt="linkedin">
+                    </a>
+                    <a class="social-link" href="https://www.instagram.com/rizkyazizhsn/" target="_blank">
+                        <img src="./assets/icons/ic-instagram.svg" width="24" height="24" alt="instagram">
+                    </a>
                 </div>
             </div>
         </nav>
@@ -81,7 +84,7 @@
                 </div>
             </div>
             <div class="col-md-4 order-1 order-md-2 order-sm-1" data-aos="fade" data-aos-delay="300" data-aos-duration="1500" data-aos-once="true">
-                <img src="./assets/image/rizki.png" class="mt-n4"  alt="">
+                <img src="./assets/image/rizki.png" class="mt-n5"  alt="">
             </div>
         </div>
     </div>
@@ -252,7 +255,7 @@
     <!-- My Works End -->
 
     <!-- Footer Start -->
-    <div class="section container contact" id="contact" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="500" data-aos-once="true">
+    <div class="section container contact" id="contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5 d-flex flex-column jusity-content-between">
@@ -272,22 +275,31 @@
                     <h1>Lets Talk!</h1>
                     <p>I am always open to descuss your project, improve your online presence or help with UI/UX design challenges.</p>
                     <div class="row mt-5">
-                        <div class="col-2">
-                            <a class="navbar-brand" href="https://github.com/rizky-aziz" target="_blank">
+                        <div class="social-media-container d-none d-md-flex align-items-center justify-content-center">
+                            <a class="social-link" href="https://github.com/rizky-aziz" target="_blank">
                                 <img src="./assets/icons/ic-github.svg" width="24" height="24" alt="github">
                             </a>
-                        </div>
-                        <div class="col-2">
-                            <a class="navbar-brand" href="https://www.linkedin.com/in/rizky-aziz-51b231192" target="_blank">
+                            <a class="social-link" href="https://www.linkedin.com/in/rizky-aziz-51b231192" target="_blank">
                                 <img src="./assets/icons/ic-linkedin.svg" width="24" height="24" alt="linkedin">
                             </a>
-                        </div>
-                        <div class="col-2">
-                            <a class="navbar-brand" href="https://www.instagram.com/rizkyazizhsn" target="_blank">
+                            <a class="social-link" href="https://www.instagram.com/rizkyazizhsn" target="_blank">
                                 <img src="./assets/icons/ic-instagram.svg" width="24" height="24" alt="instagram">
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="footer-line-break"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="footer-link-wrap">
+                    <a href="#home" class="footer-link mr-4">Home</a>
+                    <a href="#about" class="footer-link mr-4">About</a>
+                    <a href="#works" class="footer-link mr-4">Works</a>
+                    <a href="#contact" class="footer-link mr-4">Contact</a>
                 </div>
             </div>
         </div>
@@ -305,7 +317,7 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- custom js -->
-    <script src="/assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

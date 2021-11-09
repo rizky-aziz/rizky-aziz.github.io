@@ -10,9 +10,11 @@ window.onscroll = function() {
 
     if (window.pageYOffset == 0) {
         document.getElementById('navbar-fixed').style.zIndex = '1'
+        document.getElementById('navbar-fixed').classList.remove('bg-white');
         document.getElementById('btnTop').style.opacity = '0';
     } else {
         document.getElementById('navbar-fixed').style.zIndex = '1030';
+        document.getElementById('navbar-fixed').classList.add('bg-white');
         document.getElementById('btnTop').style.opacity = '1';
     }
     prevScrollpos = currentScrollPos;
@@ -29,6 +31,7 @@ function topBtn() {
 var loader = document.querySelector('#preload')
 window.addEventListener('load', function() {
     loader.style.display = 'none';
+    document.documentElement.scrollTop = 0;
 })
 
 AOS.init();

@@ -197,7 +197,7 @@ body {
         opacity: 1;
     }
 
-    p {
+    p { 
         opacity: .5 ;
         line-height: 1.7;
     }
@@ -219,8 +219,8 @@ body {
 
     .img-hover-zoom {
         overflow: hidden;
-        img {
-            transition: transform .7s ease;
+        img {   
+            transition: transform .6s cubic-bezier(.4, .64, .68, 1);
         }
         &:hover {
             img {
